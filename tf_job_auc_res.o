@@ -1,0 +1,85 @@
+2020-11-25 12:10:36.091700: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2020-11-25 12:10:36.092311: E tensorflow/stream_executor/cuda/cuda_driver.cc:351] failed call to cuInit: UNKNOWN ERROR (303)
+2020-11-25 12:10:36.092352: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (compute-1-9.local): /proc/driver/nvidia/version does not exist
+2020-11-25 12:10:36.092735: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2020-11-25 12:10:36.101085: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2394610000 Hz
+2020-11-25 12:10:36.101891: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x556c674a9160 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-11-25 12:10:36.101914: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+WARNING:tensorflow:From /project/cacds/apps/easybuild/software/Anaconda3/5.0.1/lib/python3.6/site-packages/tensorflow_core/python/feature_column/feature_column_v2.py:4267: IndicatorColumn._variable_shape (from tensorflow.python.feature_column.feature_column_v2) is deprecated and will be removed in a future version.
+Instructions for updating:
+The old _FeatureColumn APIs are being deprecated. Please use the new FeatureColumn APIs instead.
+WARNING:tensorflow:From /project/cacds/apps/easybuild/software/Anaconda3/5.0.1/lib/python3.6/site-packages/tensorflow_core/python/feature_column/feature_column_v2.py:4322: VocabularyListCategoricalColumn._num_buckets (from tensorflow.python.feature_column.feature_column_v2) is deprecated and will be removed in a future version.
+Instructions for updating:
+The old _FeatureColumn APIs are being deprecated. Please use the new FeatureColumn APIs instead.
+Your runtime has 270.0 gigabytes of available RAM
+
+You are using a high-RAM runtime!
+0.0
+2.1.0
+(949856, 19)
+All target values:
+0    792558
+1    102409
+2     45242
+3      7951
+4      1696
+Name: Prsn_Injry_Sev, dtype: int64
+Numerical variables are  ['Prsn_Age', 'Rural', 'Crash_Speed_Limit', 'Veh_Mod_Year', 'Weekend', 'Crash_season', 'Part_of_day']
+Categorical variables that have at most 5 categories are  ['Prsn_Gndr', 'Prsn_Drg_Rslt', 'Collsn_type']
+Categorical variables that have more than 5 categories are  ['Wthr_Cond', 'Light_Cond', 'Surf_Cond', 'Veh_Body_Styl', 'Prsn_Rest', 'Harm_Evnt', 'Road_Algn', 'Collsn_name']
+New shape of the input data set: (949856, 59)
+Training features shape: (607907, 59)
+Validation features shape: (151977, 59)
+Test features shape: (189972, 59)
+ROS
+Resampled dataset shape Counter({1: 507237, 0: 507237, 2: 507237, 4: 507237, 3: 507237})
+resampling time is 0.57 seconds
+Restoring model weights from the end of the best epoch.
+Epoch 00014: early stopping
+Restoring model weights from the end of the best epoch.
+Epoch 00012: early stopping
+                 Accuracy       AUC    G-mean   Avg_Pfm  Training Time  Res_time
+MLP-ROS-roc_auc  0.490030  0.687849  0.362854  0.513577       1464.028   0.57456
+MLP-ROS-pr_auc   0.456852  0.689301  0.369901  0.505351       1270.911   0.57456
+ROS-RUS
+Resampled dataset shape Counter({0: 65541, 1: 65541, 2: 65541, 3: 65541, 4: 65541})
+Resamling time 66.33 sec
+Restoring model weights from the end of the best epoch.
+Epoch 00031: early stopping
+Restoring model weights from the end of the best epoch.
+Epoch 00012: early stopping
+SMOTE-RUS
+Resampled dataset shape Counter({0: 65541, 1: 65541, 2: 65541, 3: 65541, 4: 65541})
+Resamling time 66.48 sec
+Restoring model weights from the end of the best epoch.
+Epoch 00012: early stopping
+Restoring model weights from the end of the best epoch.
+Epoch 00012: early stopping
+RUS2ROS
+Resampled dataset shape Counter({0: 65541, 1: 65541, 2: 65541, 3: 65541, 4: 65541})
+Resamling time 66.10 sec
+Restoring model weights from the end of the best epoch.
+Epoch 00014: early stopping
+Restoring model weights from the end of the best epoch.
+Epoch 00026: early stopping
+RUS2SMOTE
+Resampled dataset shape Counter({0: 65541, 1: 65541, 2: 65541, 3: 65541, 4: 65541})
+Resamling time 66.05 sec
+Restoring model weights from the end of the best epoch.
+Epoch 00035: early stopping
+Restoring model weights from the end of the best epoch.
+Epoch 00011: early stopping
+NearMiss2ROS
+Resampled dataset shape Counter({0: 65541, 1: 65541, 2: 65541, 3: 65541, 4: 65541})
+Resamling time 116.00 sec
+Restoring model weights from the end of the best epoch.
+Epoch 00011: early stopping
+Restoring model weights from the end of the best epoch.
+Epoch 00011: early stopping
+NearMiss2SMOTE
+Resampled dataset shape Counter({0: 65541, 1: 65541, 2: 65541, 3: 65541, 4: 65541})
+Resamling time 116.45 sec
+Restoring model weights from the end of the best epoch.
+Epoch 00011: early stopping
+Restoring model weights from the end of the best epoch.
+Epoch 00013: early stopping
