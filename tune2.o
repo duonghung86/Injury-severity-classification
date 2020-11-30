@@ -1,0 +1,237 @@
+Your runtime has 270.0 gigabytes of available RAM
+
+Current system-wide CPU utilization %:  0.0
+2.1.0
+(949856, 19)
+All target values:
+0    792558
+1    102409
+2     45242
+3      7951
+4      1696
+Name: Prsn_Injry_Sev, dtype: int64
+Numerical variables are  ['Prsn_Age', 'Rural', 'Crash_Speed_Limit', 'Veh_Mod_Year', 'Weekend', 'Crash_season', 'Part_of_day']
+Categorical variables that have at most 5 categories are  ['Prsn_Gndr', 'Prsn_Drg_Rslt', 'Collsn_type']
+Categorical variables that have more than 5 categories are  ['Wthr_Cond', 'Light_Cond', 'Surf_Cond', 'Veh_Body_Styl', 'Prsn_Rest', 'Harm_Evnt', 'Road_Algn', 'Collsn_name']
+2020-11-30 01:54:44.120625: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2020-11-30 01:54:44.120669: E tensorflow/stream_executor/cuda/cuda_driver.cc:351] failed call to cuInit: UNKNOWN ERROR (303)
+2020-11-30 01:54:44.120694: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (compute-0-33.local): /proc/driver/nvidia/version does not exist
+2020-11-30 01:54:44.121081: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2020-11-30 01:54:44.128743: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2394470000 Hz
+2020-11-30 01:54:44.129431: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x559162a15a80 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-11-30 01:54:44.129451: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+WARNING:tensorflow:From /project/cacds/apps/easybuild/software/Anaconda3/5.0.1/lib/python3.6/site-packages/tensorflow_core/python/feature_column/feature_column_v2.py:4267: IndicatorColumn._variable_shape (from tensorflow.python.feature_column.feature_column_v2) is deprecated and will be removed in a future version.
+Instructions for updating:
+The old _FeatureColumn APIs are being deprecated. Please use the new FeatureColumn APIs instead.
+WARNING:tensorflow:From /project/cacds/apps/easybuild/software/Anaconda3/5.0.1/lib/python3.6/site-packages/tensorflow_core/python/feature_column/feature_column_v2.py:4322: VocabularyListCategoricalColumn._num_buckets (from tensorflow.python.feature_column.feature_column_v2) is deprecated and will be removed in a future version.
+Instructions for updating:
+The old _FeatureColumn APIs are being deprecated. Please use the new FeatureColumn APIs instead.
+New shape of the input data set: (949856, 59)
+Training features shape: (607907, 59)
+Validation features shape: (151977, 59)
+Test features shape: (189972, 59)
+under sampling ...
+Counter({0: 65541, 1: 65541, 2: 28954, 3: 5089, 4: 1086})
+over sampling #2 ...
+Restoring model weights from the end of the best epoch.
+Epoch 00016: early stopping
+Restoring model weights from the end of the best epoch.
+Epoch 00027: early stopping
+Restoring model weights from the end of the best epoch.
+Epoch 00014: early stopping
+          Accuracy       AUC    G-mean   Avg_Pfm  Training Time
+MLP-HS#1  0.483719  0.699687  0.369669  0.517691         22.571
+MLP-HS#2  0.489241  0.698328  0.361098  0.516222         37.050
+MLP-HS#3  0.496105  0.705068  0.346970  0.516048         20.109
+WARNING:tensorflow:Large dropout rate: 0.5 (>0.5). In TensorFlow 2.x, dropout() uses dropout rate instead of keep_prob. Please ensure that this is intended.
+WARNING:tensorflow:Large dropout rate: 0.5 (>0.5). In TensorFlow 2.x, dropout() uses dropout rate instead of keep_prob. Please ensure that this is intended.
+WARNING:tensorflow:Large dropout rate: 0.5 (>0.5). In TensorFlow 2.x, dropout() uses dropout rate instead of keep_prob. Please ensure that this is intended.
+WARNING:tensorflow:Large dropout rate: 0.5 (>0.5). In TensorFlow 2.x, dropout() uses dropout rate instead of keep_prob. Please ensure that this is intended.
+WARNING:tensorflow:Large dropout rate: 0.5 (>0.5). In TensorFlow 2.x, dropout() uses dropout rate instead of keep_prob. Please ensure that this is intended.
+Restoring model weights from the end of the best epoch.
+Epoch 00021: early stopping
+Restoring model weights from the end of the best epoch.
+Epoch 00024: early stopping
+Restoring model weights from the end of the best epoch.
+Epoch 00037: early stopping
+Restoring model weights from the end of the best epoch.
+Epoch 00013: early stopping
+Restoring model weights from the end of the best epoch.
+Epoch 00022: early stopping
+Tuning time is 698.02
+{'units': 10, 'learning_rate': 0.0001, 'dropouts': 0.2, 'activation': 'sigmoid', 'kernel_ini': 'he_uniform', 'tuner/epochs': 10, 'tuner/initial_epoch': 0, 'tuner/bracket': 1, 'tuner/round': 0}
+Restoring model weights from the end of the best epoch.
+Epoch 00031: early stopping
+Restoring model weights from the end of the best epoch.
+Epoch 00023: early stopping
+Restoring model weights from the end of the best epoch.
+Epoch 00023: early stopping
+Restoring model weights from the end of the best epoch.
+Epoch 00029: early stopping
+Restoring model weights from the end of the best epoch.
+Epoch 00014: early stopping
+Restoring model weights from the end of the best epoch.
+Epoch 00018: early stopping
+Restoring model weights from the end of the best epoch.
+Epoch 00028: early stopping
+Tuning time is 640.48
+{'units': 10, 'learning_rate': 0.01, 'dropouts': 0.2, 'activation': 'tanh', 'kernel_ini': 'uniform', 'tuner/epochs': 50, 'tuner/initial_epoch': 10, 'tuner/bracket': 2, 'tuner/round': 2, 'tuner/trial_id': '8e8c2b8593eaf6abd40a24b28ceaadb8'}
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.iter
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_1
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_2
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.decay
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.learning_rate
+WARNING:tensorflow:A checkpoint was restored (e.g. tf.train.Checkpoint.restore or tf.keras.Model.load_weights) but not all checkpointed values were used. See above for specific issues. Use expect_partial() on the load status object, e.g. tf.train.Checkpoint.restore(...).expect_partial(), to silence these warnings, or use assert_consumed() to make the check explicit. See https://www.tensorflow.org/guide/checkpoint#loading_mechanics for details.
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.iter
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_1
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_2
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.decay
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.learning_rate
+WARNING:tensorflow:A checkpoint was restored (e.g. tf.train.Checkpoint.restore or tf.keras.Model.load_weights) but not all checkpointed values were used. See above for specific issues. Use expect_partial() on the load status object, e.g. tf.train.Checkpoint.restore(...).expect_partial(), to silence these warnings, or use assert_consumed() to make the check explicit. See https://www.tensorflow.org/guide/checkpoint#loading_mechanics for details.
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.iter
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_1
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_2
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.decay
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.learning_rate
+WARNING:tensorflow:A checkpoint was restored (e.g. tf.train.Checkpoint.restore or tf.keras.Model.load_weights) but not all checkpointed values were used. See above for specific issues. Use expect_partial() on the load status object, e.g. tf.train.Checkpoint.restore(...).expect_partial(), to silence these warnings, or use assert_consumed() to make the check explicit. See https://www.tensorflow.org/guide/checkpoint#loading_mechanics for details.
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.iter
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_1
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_2
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.decay
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.learning_rate
+WARNING:tensorflow:A checkpoint was restored (e.g. tf.train.Checkpoint.restore or tf.keras.Model.load_weights) but not all checkpointed values were used. See above for specific issues. Use expect_partial() on the load status object, e.g. tf.train.Checkpoint.restore(...).expect_partial(), to silence these warnings, or use assert_consumed() to make the check explicit. See https://www.tensorflow.org/guide/checkpoint#loading_mechanics for details.
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.iter
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_1
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_2
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.decay
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.learning_rate
+WARNING:tensorflow:A checkpoint was restored (e.g. tf.train.Checkpoint.restore or tf.keras.Model.load_weights) but not all checkpointed values were used. See above for specific issues. Use expect_partial() on the load status object, e.g. tf.train.Checkpoint.restore(...).expect_partial(), to silence these warnings, or use assert_consumed() to make the check explicit. See https://www.tensorflow.org/guide/checkpoint#loading_mechanics for details.
+Restoring model weights from the end of the best epoch.
+Epoch 00044: early stopping
+Restoring model weights from the end of the best epoch.
+Epoch 00026: early stopping
+Restoring model weights from the end of the best epoch.
+Epoch 00037: early stopping
+Restoring model weights from the end of the best epoch.
+Epoch 00036: early stopping
+Restoring model weights from the end of the best epoch.
+Epoch 00011: early stopping
+Restoring model weights from the end of the best epoch.
+Epoch 00013: early stopping
+Restoring model weights from the end of the best epoch.
+Epoch 00020: early stopping
+Restoring model weights from the end of the best epoch.
+Epoch 00012: early stopping
+Tuning time is 620.29
+{'units': 5, 'learning_rate': 0.001, 'dropouts': 0.5000000000000001, 'activation': 'sigmoid', 'kernel_ini': 'he_uniform', 'tuner/epochs': 10, 'tuner/initial_epoch': 0, 'tuner/bracket': 1, 'tuner/round': 0}
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.iter
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_1
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_2
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.decay
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.learning_rate
+WARNING:tensorflow:A checkpoint was restored (e.g. tf.train.Checkpoint.restore or tf.keras.Model.load_weights) but not all checkpointed values were used. See above for specific issues. Use expect_partial() on the load status object, e.g. tf.train.Checkpoint.restore(...).expect_partial(), to silence these warnings, or use assert_consumed() to make the check explicit. See https://www.tensorflow.org/guide/checkpoint#loading_mechanics for details.
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.iter
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_1
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_2
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.decay
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.learning_rate
+WARNING:tensorflow:A checkpoint was restored (e.g. tf.train.Checkpoint.restore or tf.keras.Model.load_weights) but not all checkpointed values were used. See above for specific issues. Use expect_partial() on the load status object, e.g. tf.train.Checkpoint.restore(...).expect_partial(), to silence these warnings, or use assert_consumed() to make the check explicit. See https://www.tensorflow.org/guide/checkpoint#loading_mechanics for details.
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.iter
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_1
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_2
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.decay
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.learning_rate
+WARNING:tensorflow:A checkpoint was restored (e.g. tf.train.Checkpoint.restore or tf.keras.Model.load_weights) but not all checkpointed values were used. See above for specific issues. Use expect_partial() on the load status object, e.g. tf.train.Checkpoint.restore(...).expect_partial(), to silence these warnings, or use assert_consumed() to make the check explicit. See https://www.tensorflow.org/guide/checkpoint#loading_mechanics for details.
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.iter
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_1
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_2
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.decay
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.learning_rate
+WARNING:tensorflow:A checkpoint was restored (e.g. tf.train.Checkpoint.restore or tf.keras.Model.load_weights) but not all checkpointed values were used. See above for specific issues. Use expect_partial() on the load status object, e.g. tf.train.Checkpoint.restore(...).expect_partial(), to silence these warnings, or use assert_consumed() to make the check explicit. See https://www.tensorflow.org/guide/checkpoint#loading_mechanics for details.
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.iter
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_1
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_2
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.decay
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.learning_rate
+WARNING:tensorflow:A checkpoint was restored (e.g. tf.train.Checkpoint.restore or tf.keras.Model.load_weights) but not all checkpointed values were used. See above for specific issues. Use expect_partial() on the load status object, e.g. tf.train.Checkpoint.restore(...).expect_partial(), to silence these warnings, or use assert_consumed() to make the check explicit. See https://www.tensorflow.org/guide/checkpoint#loading_mechanics for details.
+Restoring model weights from the end of the best epoch.
+Epoch 00039: early stopping
+Restoring model weights from the end of the best epoch.
+Epoch 00023: early stopping
+Restoring model weights from the end of the best epoch.
+Epoch 00027: early stopping
+Restoring model weights from the end of the best epoch.
+Epoch 00022: early stopping
+Restoring model weights from the end of the best epoch.
+Epoch 00027: early stopping
+Restoring model weights from the end of the best epoch.
+Epoch 00035: early stopping
+Tuning time is 737.64
+{'units': 15, 'learning_rate': 0.01, 'dropouts': 0.4000000000000001, 'activation': 'selu', 'kernel_ini': 'he_uniform', 'tuner/epochs': 10, 'tuner/initial_epoch': 2, 'tuner/bracket': 2, 'tuner/round': 1, 'tuner/trial_id': '1099a83b666af3b8394127c3468e4202'}
+                            auc  ...                            recall
+units                        10  ...                                15
+learning_rate            0.0001  ...                              0.01
+dropouts                    0.2  ...                               0.4
+activation              sigmoid  ...                              selu
+kernel_ini           he_uniform  ...                        he_uniform
+tuner/epochs                 10  ...                                10
+tuner/initial_epoch           0  ...                                 2
+tuner/bracket                 1  ...                                 2
+tuner/round                   0  ...                                 1
+tuner/trial_id              NaN  ...  1099a83b666af3b8394127c3468e4202
+
+[10 rows x 4 columns]
+                 Accuracy       AUC    G-mean   Avg_Pfm  Training Time
+MLP-HS#1         0.483719  0.699687  0.369669  0.517691         22.571
+MLP-HS#2         0.489241  0.698328  0.361098  0.516222         37.050
+MLP-HS#3         0.496105  0.705068  0.346970  0.516048         20.109
+MLP-auc-1        0.709699  0.670099  0.139457  0.506418        698.019
+MLP-auc-2        0.610053  0.455504  0.021516  0.362358        698.019
+MLP-auc-3        0.654423  0.513084  0.039492  0.402333        698.019
+MLP-auc-4        0.601183  0.538528  0.059097  0.399603        698.019
+MLP-auc-5        0.625850  0.655180  0.197255  0.492762        698.019
+MLP-accuracy-1   0.486503  0.707308  0.373713  0.522508        640.476
+MLP-accuracy-2   0.489904  0.711497  0.384151  0.528517        640.476
+MLP-accuracy-3   0.470601  0.709131  0.393749  0.524494        640.476
+MLP-accuracy-4   0.522377  0.715736  0.376945  0.538352        640.476
+MLP-accuracy-5   0.454830  0.715519  0.371315  0.513888        640.476
+MLP-precision-1  0.575537  0.681619  0.198002  0.485053        620.293
+MLP-precision-2  0.481650  0.685071  0.330243  0.498988        620.293
+MLP-precision-3  0.540048  0.691171  0.205212  0.478810        620.293
+MLP-precision-4  0.307498  0.572547  0.257853  0.379299        620.293
+MLP-precision-5  0.525872  0.685089  0.182361  0.464441        620.293
+MLP-recall-1     0.517297  0.710204  0.381237  0.536246        737.640
+MLP-recall-2     0.509812  0.708031  0.388671  0.535505        737.640
+MLP-recall-3     0.513734  0.710647  0.379086  0.534489        737.640
+MLP-recall-4     0.512286  0.712149  0.382000  0.535479        737.640
+MLP-recall-5     0.518961  0.718131  0.359583  0.532225        737.640
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.iter
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_1
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_2
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.decay
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.learning_rate
+WARNING:tensorflow:A checkpoint was restored (e.g. tf.train.Checkpoint.restore or tf.keras.Model.load_weights) but not all checkpointed values were used. See above for specific issues. Use expect_partial() on the load status object, e.g. tf.train.Checkpoint.restore(...).expect_partial(), to silence these warnings, or use assert_consumed() to make the check explicit. See https://www.tensorflow.org/guide/checkpoint#loading_mechanics for details.
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.iter
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_1
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_2
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.decay
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.learning_rate
+WARNING:tensorflow:A checkpoint was restored (e.g. tf.train.Checkpoint.restore or tf.keras.Model.load_weights) but not all checkpointed values were used. See above for specific issues. Use expect_partial() on the load status object, e.g. tf.train.Checkpoint.restore(...).expect_partial(), to silence these warnings, or use assert_consumed() to make the check explicit. See https://www.tensorflow.org/guide/checkpoint#loading_mechanics for details.
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.iter
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_1
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_2
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.decay
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.learning_rate
+WARNING:tensorflow:A checkpoint was restored (e.g. tf.train.Checkpoint.restore or tf.keras.Model.load_weights) but not all checkpointed values were used. See above for specific issues. Use expect_partial() on the load status object, e.g. tf.train.Checkpoint.restore(...).expect_partial(), to silence these warnings, or use assert_consumed() to make the check explicit. See https://www.tensorflow.org/guide/checkpoint#loading_mechanics for details.
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.iter
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_1
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_2
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.decay
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.learning_rate
+WARNING:tensorflow:A checkpoint was restored (e.g. tf.train.Checkpoint.restore or tf.keras.Model.load_weights) but not all checkpointed values were used. See above for specific issues. Use expect_partial() on the load status object, e.g. tf.train.Checkpoint.restore(...).expect_partial(), to silence these warnings, or use assert_consumed() to make the check explicit. See https://www.tensorflow.org/guide/checkpoint#loading_mechanics for details.
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.iter
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_1
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_2
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.decay
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.learning_rate
+WARNING:tensorflow:A checkpoint was restored (e.g. tf.train.Checkpoint.restore or tf.keras.Model.load_weights) but not all checkpointed values were used. See above for specific issues. Use expect_partial() on the load status object, e.g. tf.train.Checkpoint.restore(...).expect_partial(), to silence these warnings, or use assert_consumed() to make the check explicit. See https://www.tensorflow.org/guide/checkpoint#loading_mechanics for details.
