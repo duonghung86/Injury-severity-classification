@@ -1,8 +1,0 @@
-2020-11-24 12:38:38.243605: E tensorflow/stream_executor/cuda/cuda_driver.cc:351] failed call to cuInit: UNKNOWN ERROR (303)
-WARNING:tensorflow:From /project/cacds/apps/easybuild/software/Anaconda3/5.0.1/lib/python3.6/site-packages/tensorflow_core/python/feature_column/feature_column_v2.py:4267: IndicatorColumn._variable_shape (from tensorflow.python.feature_column.feature_column_v2) is deprecated and will be removed in a future version.
-Instructions for updating:
-The old _FeatureColumn APIs are being deprecated. Please use the new FeatureColumn APIs instead.
-WARNING:tensorflow:From /project/cacds/apps/easybuild/software/Anaconda3/5.0.1/lib/python3.6/site-packages/tensorflow_core/python/feature_column/feature_column_v2.py:4322: VocabularyListCategoricalColumn._num_buckets (from tensorflow.python.feature_column.feature_column_v2) is deprecated and will be removed in a future version.
-Instructions for updating:
-The old _FeatureColumn APIs are being deprecated. Please use the new FeatureColumn APIs instead.
-slurmstepd: error: *** JOB 3638190 ON compute-2-17 CANCELLED AT 2020-11-24T17:38:37 DUE TO TIME LIMIT ***
